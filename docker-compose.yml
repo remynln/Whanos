@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  jenkins:
+    build: .
+    image: whanos-jenkins
+    restart: unless-stopped
+    environment:
+      - ADMIN_PASSWORD=admin
+    ports:
+      - 8080:8080
