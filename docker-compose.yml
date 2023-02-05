@@ -6,6 +6,6 @@ services:
     image: whanos-jenkins
     restart: unless-stopped
     environment:
-      - ADMIN_PASSWORD=admin
+      - JENKINS_ADMIN_PASSWORD=admin
     ports:
       - 8080:8080
