@@ -1,0 +1,11 @@
+FROM gcc:11.2.0
+
+SHELL [ "/bin/bash", "-c" ]
+
+WORKDIR /app
+
+COPY . /app
+
+RUN make
+
+CMD ["./compiled-app"]
